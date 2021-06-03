@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator" content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | Home</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="canonical"
+	href="http://localhost:8081/">
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		
+		<p class="lead text-muted">You can take information about University</p>
+		
+		<div
+		class="cover-container d-flex w-100 h-100 p-1 mx-auto flex-column bg-dark">
+		<div class="alert alert-info mt-2">
+		<h6 class="font-italic text-light">
+		<h1 class="cover-heading"><p th:text="${university.name}">VALUE</p></h1>
+		<h6><p th:text="${university.id}">VALUE</p></h6>
+		</h6>
+		</div>
+		</div>	
+			
+		<h1 class="cover-heading">Choose the section of:</h1>
+		
+
+		
+		
+		<div th:insert="blocks/footer :: fivebuttons"></div> 
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

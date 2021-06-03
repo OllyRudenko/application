@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v4.1.1">
+<title>University | Course List</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/4.5/examples/cover/">
+
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">COURSES:</h1>
+		<p class="lead">
+		<div class="container mt-50 mb-50 mr-50">
+			<div th:each="el : ${courses}" class="alert alert-info mt-2">
+				<h5 th:inline="text">[[${el.name}]], id=[[${el.course_id}]], [[${el.courseDescription}]]</h5>
+			</div>
+		</div>
+		</p>
+		<br>
+		<div th:insert="blocks/footer :: fivebuttons"></div>
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

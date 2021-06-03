@@ -1,0 +1,194 @@
+2020-10-22 01:19:53,883 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP INSERT to database
+2020-10-22 01:19:54,210 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP INSERT to database
+2020-10-22 01:19:54,510 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:54,769 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:54,907 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT INSERT to database
+2020-10-22 01:19:55,042 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT INSERT to database
+2020-10-22 01:19:55,183 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT INSERT to database
+2020-10-22 01:19:55,801 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT INSERT to database
+2020-10-22 01:19:56,329 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:56,330 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT FOUND BY ID
+2020-10-22 01:19:56,853 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:56,854 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT FOUND BY ID
+2020-10-22 01:19:57,377 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:57,378 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT FOUND BY ID
+2020-10-22 01:19:57,902 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:57,903 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT FOUND BY ID
+2020-10-22 01:19:58,296 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:58,553 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:58,810 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:59,067 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:59,067 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+FIND ALL STUDENTS
+2020-10-22 01:19:59,589 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:19:59,590 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT FOUND BY ID
+2020-10-22 01:19:59,726 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+STUDENT UPDATE
+2020-10-22 01:20:00,628 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:00,629 INFO u.f.o.t.u.d.StudentDAOImpl [main] 
+List<Student> WITH SAME group_id complite
+2020-10-22 01:20:00,765 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE INSERT to database
+2020-10-22 01:20:00,913 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE INSERT to database
+2020-10-22 01:20:01,050 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE INSERT to database
+2020-10-22 01:20:01,184 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSES FOUND
+2020-10-22 01:20:01,471 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:01,753 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:02,037 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:02,170 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE UPDATE
+2020-10-22 01:20:02,437 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:02,569 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSES FOUND
+2020-10-22 01:20:02,705 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER INSERT
+2020-10-22 01:20:02,838 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER INSERT
+2020-10-22 01:20:02,970 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER INSERT
+2020-10-22 01:20:03,100 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHERS FOUND
+2020-10-22 01:20:03,359 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:03,622 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:03,879 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:04,010 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER UPDATE
+2020-10-22 01:20:04,152 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHERS FOUND
+2020-10-22 01:20:04,281 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHERS FOUND
+2020-10-22 01:20:04,542 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:04,802 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:05,062 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:05,206 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON INSERT to database
+2020-10-22 01:20:05,465 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:05,722 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:05,980 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:06,117 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON INSERT to database
+2020-10-22 01:20:06,383 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:06,644 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:06,915 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:07,066 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON INSERT to database
+2020-10-22 01:20:07,459 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:07,724 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:07,999 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:08,260 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:08,529 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:08,789 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:08,790 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSONS FOUND
+2020-10-22 01:20:09,762 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:10,018 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:10,278 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:10,279 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON FOUND BY ID
+2020-10-22 01:20:10,796 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:11,071 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:11,328 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:11,329 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON FOUND BY ID
+2020-10-22 01:20:11,862 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:12,122 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:12,379 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:12,379 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON FOUND BY ID
+2020-10-22 01:20:12,515 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON UPDATE
+2020-10-22 01:20:13,043 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:13,300 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:13,557 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:13,557 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSON FOUND BY ID
+2020-10-22 01:20:13,951 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:14,211 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:14,475 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:14,733 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:14,992 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:15,255 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:15,256 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSONS FOUND
+2020-10-22 01:20:15,778 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:16,043 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:16,763 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:17,026 INFO u.f.o.t.u.d.CourseDAOImpl [main] 
+COURSE FOUND BY ID
+2020-10-22 01:20:17,286 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+TEACHER FOUND BY ID
+2020-10-22 01:20:17,546 INFO u.f.o.t.u.d.GroupDAOImpl [main] 
+GROUP FOUND BY ID
+2020-10-22 01:20:17,547 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSONS FOUND BY GROUP-ID
+2020-10-22 01:20:17,806 INFO u.f.o.t.u.d.TeacherDAOImpl [main] 
+LESSONS FOUND BY TEACHER-ID

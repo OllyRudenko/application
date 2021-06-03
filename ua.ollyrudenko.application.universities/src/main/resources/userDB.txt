@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS university;
+DROP USER IF EXISTS foxminded;
+CREATE USER foxminded WITH PASSWORD 'foxminded';
+CREATE database university
+WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+GRANT TEMPORARY, CONNECT ON DATABASE university TO PUBLIC;
+GRANT ALL ON DATABASE university TO foxminded;
+
+GRANT ALL PRIVILEGES ON DATABASE "university" to foxminded;

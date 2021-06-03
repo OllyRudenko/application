@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator"
+	content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | Group update</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">GROUP UPDATED:</h1>
+		
+		<p class="lead">
+		
+			<div class="container mt-50 mb-50 mr-50">
+			<div th:each="el : ${group}" class="alert alert-info mt-2" align=left>
+				<h5 th:inline="text">[[${el.name}]], id=[[${el.group_id}]]</h5>
+			</div>
+		</div>
+
+		</p>
+		
+
+		
+		
+		<br>
+		<div th:insert="blocks/footer :: fivebuttons"></div>
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

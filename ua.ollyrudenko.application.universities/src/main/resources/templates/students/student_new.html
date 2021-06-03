@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator"
+	content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | Student by id</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">STUDENTS:</h1>
+		
+		<form th:method="POST" th:action="@{/students/}" th:object="${student}">
+		<input type="text" th:field="*{firstName}" placeholder="Input first name"
+					class="form-control">
+		<br> 
+		<input type="text" th:field="*{lastName}" placeholder="Input last name" class="form-control">
+		<br>
+		<input type="text" th:field="*{entry}" placeholder="YYYY-mm-dd"
+					class="form-control">
+		<br> 
+		<br>
+		<input type="submit" value="create">
+		</form>
+		
+
+		
+		
+		<br>
+		<p class="lead text-muted">
+			<a href="/ua.foxminded.ollyrudenko.task09.university/grouplist/" class="btn btn-lg btn-secondary mr-10">Groups</a> 
+			<a href="/ua.foxminded.ollyrudenko.task09.university/courselist/" class="btn btn-lg btn-secondary mr-10">Courses</a> 
+			<a href="/ua.foxminded.ollyrudenko.task09.university/teacherlist/" class="btn btn-lg btn-secondary mr-10">Teachers</a> 
+			<a href="/ua.foxminded.ollyrudenko.task09.university/lessonlist/" class="btn btn-lg btn-secondary mr-10">Lessons</a>
+		</p>
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

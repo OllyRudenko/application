@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator"
+	content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | Lessons</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style type="text/css">
+	span {
+		color: red;
+		font-style: italic;
+	}
+</style>
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">LESSON'S OPERATIONS:</h1>
+
+		<div class="container mt-10 mb-10">
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>ADD LESSON</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/lessons/'"
+				  th:object="${lessondto}" method="post">
+				<input type="number" th:field="*{course_id}" placeholder="Input course id"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('course_id')}" th:errors="*{course_id}">Course
+                            Error</span>
+<!-- 			<br> 
+				<input type="text"
+					name="firsName" placeholder="Input teacher first name" class="form-control">
+				<br>
+				<input type="text"
+					name="lastName" placeholder="Input teacher last name" class="form-control">
+					 -->
+				<br>
+				<input type="number" th:field="*{teacher_id}" placeholder="Input teacher id"
+					class="form-control">	
+				<span th:if="${#fields.hasErrors('teacher_id')}" th:errors="*{teacher_id}">Teacher
+                            Error</span> 
+				<br>
+				<input type="number" th:field="*{classroom}" placeholder="classroom"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('classroom')}" th:errors="*{classroom}">Classroom
+                            Error</span> 
+				<br> 
+				<input type="number"
+					   th:field="*{group_id}" placeholder="Input id of group"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('group_id')}" th:errors="*{group_id}">Group
+                            Error</span>
+				<br>
+				<input type="text" th:field="*{time}" placeholder="hh:mm:ss"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('time')}" th:errors="*{time}">Time
+                            Error</span>
+				<br>
+				<input type="text" th:field="*{date}" placeholder="YYYY-mm-dd"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('date')}" th:errors="*{date}">Date
+                            Error</span>
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>FIND ALL LESSONS</p>
+			</h6>
+			<div align=left th:each="el : ${id}">
+				<a
+					th:href="'/' + ${el} + '/lessons/lessonlist/'"
+					class="btn btn-success">SUBMIT</a>
+			</div>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>FIND LESSON BY ID</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/lessons/lesson_by_id'"
+				method="get">
+				<input type="number" name="id" placeholder="Input id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>DELETE LESSON</p>
+			</h6>
+			<br>
+			<form th:action="'/' + ${id} + '/lessons/delete'"
+				method="get">
+				<input type="number" name="id" placeholder="Input id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>UPDATE LESSON</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/lessons/update'"
+				method="post">
+				<br>
+				<input type="number" name="lesson_id" placeholder="Input lesson id"
+					class="form-control">	
+				<br>
+				<input type="number" name="course_id" placeholder="Input course id"
+					class="form-control">
+				<br>
+				<input type="number" name="teacher_id" placeholder="Input teacher id"
+					class="form-control">	 
+				<br>
+				<input type="number" name="classroom" placeholder="classroom"
+					class="form-control">
+				<br> 
+				<input type="number"
+					name="group_id" placeholder="Input id of group"
+					class="form-control">
+				<br>
+				<input type="text" name="time" placeholder="hh:mm:ss"
+					class="form-control">
+				<br>
+				<input type="text" name="date" placeholder="YYYY-mm-dd"
+					class="form-control">
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>LESSONS BY ONE GROUP</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/lessons/lessonlist_by_group'"
+				method="get">
+				<input type="number" name="group_id" placeholder="Input group id" 
+					class="form-control">
+			<br>
+				<input type="text" name="start" placeholder="YYYY-mm-dd"
+					class="form-control">
+			<br>
+				<input type="text" name="end" placeholder="YYYY-mm-dd"
+					class="form-control">
+				<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>LESSONS BY ONE TEACHER</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/lessons/lessonlist_by_teacher'"
+				method="get">
+				<input type="number" name="teacher_id" placeholder="Input teacher id" 
+					class="form-control">
+			<br>
+				<input type="text" name="start" placeholder="YYYY-mm-dd"
+					class="form-control">
+			<br>
+				<input type="text" name="end" placeholder="YYYY-mm-dd"
+					class="form-control">
+				<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+		</div>
+
+
+
+		<br>
+		<br>
+		<p class="lead text-muted">
+			<a th:href="'/' + ${id} + '/groups/'"
+				class="btn btn-lg btn-secondary mr-10">Groups</a> <a
+				th:href="'/' + ${id} + '/courses/'"
+				class="btn btn-lg btn-secondary mr-10">Courses</a> <a
+				th:href="'/' + ${id} + '/teachers/'"
+				class="btn btn-lg btn-secondary mr-10">Teachers</a> <a
+				th:href="'/' + ${id} + '/students/'"
+				class="btn btn-lg btn-secondary mr-10">Students</a>
+		</p>
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

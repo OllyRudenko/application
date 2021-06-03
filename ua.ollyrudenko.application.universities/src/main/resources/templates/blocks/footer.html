@@ -1,0 +1,24 @@
+<div th:fragment="footer">
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Course JAVA SPRING,  student O.Rudenko.</p>
+    </div>
+  </footer>
+</div>
+
+<div th:fragment="fivebuttons">
+		<p class="lead">
+		<div class="container mt-100 mb-100 mr-100">
+			<a th:href="'/' + ${id} + '/courses/'"
+				class="btn btn-lg btn-secondary mr-10">Courses</a> 
+			<a th:href="'/' + ${id} + '/teachers/'"
+				class="btn btn-lg btn-secondary mr-10">Teachers</a> 
+			<a th:href="'/' + ${id} + '/groups/'"
+				class="btn btn-lg btn-secondary mr-10">Groups</a>
+			<a th:href="'/' + ${id} + '/students/'"
+				class="btn btn-lg btn-secondary mr-10">Students</a> 
+			<a th:href="'/' + ${id} + '/lessons/'"
+				class="btn btn-lg btn-secondary mr-10">Lessons</a>
+		</div>
+		</p>
+</div>

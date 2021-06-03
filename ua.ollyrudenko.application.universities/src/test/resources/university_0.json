@@ -1,0 +1,236 @@
+{
+    "_embedded": {
+        "universities": [
+            {
+                "name": "High University",
+                "students": [
+                    {
+                        "firstName": "Maxim",
+                        "lastName": "Perepelitsa",
+                        "entry": "2021-02-28",
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "firstName": "Karina",
+                        "lastName": "Submarina",
+                        "entry": "2021-02-28",
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "firstName": "Tayiana",
+                        "lastName": "Monatik",
+                        "entry": "2021-02-28",
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "firstName": "Sergey",
+                        "lastName": "Taran",
+                        "entry": "2021-02-28",
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    }
+                ],
+                "teachers": [
+                    {
+                        "firstName": "Ivan",
+                        "lastName": "Mazepa",
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "firstName": "Nestor",
+                        "lastName": "Mahno",
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "AA-01",
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    }
+                ],
+                "courses": [
+                    {
+                        "name": "math",
+                        "courseDescription": "Mathematic",
+                        "groups": [],
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "name": "en",
+                        "courseDescription": "English",
+                        "groups": [],
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    }
+                ],
+                "schedule": [
+                    {
+                        "course": {
+                            "name": "math",
+                            "courseDescription": "Mathematic",
+                            "groups": [],
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "teacher": {
+                            "firstName": "Nestor",
+                            "lastName": "Mahno",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "classroom": 1,
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "time": "09:00:00",
+                        "date": "2021-03-02",
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    },
+                    {
+                        "course": {
+                            "name": "math",
+                            "courseDescription": "Mathematic",
+                            "groups": [],
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "teacher": {
+                            "firstName": "Ivan",
+                            "lastName": "Mazepa",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "classroom": 1,
+                        "group": {
+                            "name": "AA-01",
+                            "_links": {
+                                "university": {
+                                    "href": "http://localhost:8081/rest/universities/1"
+                                }
+                            }
+                        },
+                        "time": "11:00:00",
+                        "date": "2021-03-02",
+                        "_links": {
+                            "university": {
+                                "href": "http://localhost:8081/rest/universities/1"
+                            }
+                        }
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8081/rest/universities/1"
+                    },
+                    "university": {
+                        "href": "http://localhost:8081/rest/universities/1"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8081/rest/universities"
+        },
+        "profile": {
+            "href": "http://localhost:8081/rest/profile/universities"
+        },
+        "search": {
+            "href": "http://localhost:8081/rest/universities/search"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1,
+        "number": 0
+    }
+}

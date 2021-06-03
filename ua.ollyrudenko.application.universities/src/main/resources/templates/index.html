@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator" content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | First page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="canonical"
+	href="http://localhost:8081/">
+
+<style type="text/css">
+	span {
+		color: red;
+		font-style: italic;
+	}
+</style>
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">Choose the section of:</h1>
+		<p class="lead text-muted">You can take information about University</p>
+		
+		<p class="lead">
+		<div class="container mt-50 mb-50 mr-50">
+			<div th:each="el : ${universities}" class="alert alert-info mt-2">
+				<a th:href="@{/{id}(id=${el.id})}" th:text="${el.name}">University</a>
+				<!-- <h5 th:inline="text">[[${el.name}]], id=[[${el.id}]]</h5> -->
+			</div>
+		</div>
+		</p>
+		
+		<br>
+		<div class="container mt-10 mb-10">
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>ADD UNIVERSITY</p>
+			</h6>
+			<form action="/"
+				  th:object="${university}" method="post">
+				<input type="text" th:field="*{name}" placeholder="Input name" class="form-control">
+				<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name
+                            Error</span>
+			<br>
+			<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>DELETE UNIVERSITY</p>
+			</h6>
+			<form th:action="'/delete'"
+				method="get">
+				<input type="text" name="id" placeholder="Input id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>UPDATE UNIVERSITY</p>
+			</h6>
+			<form th:action="'/update'"
+				method="post">
+				<input type="number" name="id" placeholder="Input id"
+					class="form-control"><br>
+				<input type="text" name="name" placeholder="Input name"
+					class="form-control">
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			
+		
+		</main>
+
+
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

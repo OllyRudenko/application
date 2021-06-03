@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Olga Rudenko">
+<meta name="generator"
+	content="Eclipse IDE for Enterprise Java Developers. Version: 2019-12 (4.14.0)">
+<meta name="description" content="University application">
+<title>University | Groups</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style type="text/css">
+	span {
+		color: red;
+		font-style: italic;
+	}
+</style>
+</head>
+
+
+<body class="text-center">
+
+	<div
+		class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-dark">
+		<header th:insert="blocks/header :: header"></header>
+
+
+		<main role="main" class="inner cover">
+		<h1 class="cover-heading">GROUP'S OPERATIONS:</h1>
+
+		<div class="container mt-10 mb-10">
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>ADD GROUP</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/groups/'"
+				th:object="${group}" method="post">
+				<input type="text" th:field="*{name}" placeholder="Input name"
+					class="form-control">
+				<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name
+                            Error</span>
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>FIND ALL GROUPS</p>
+			</h6>
+			<div align=left th:each="el : ${id}">
+				<a
+					th:href="'/' + ${el} + '/groups/grouplist/'"
+					class="btn btn-success">SUBMIT</a>
+			</div>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>FIND GROUP BY ID</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/groups/group_by_id'"
+				method="get">
+				<input type="number" name="id" placeholder="Input id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>DELETE GROUP</p>
+			</h6>
+			<br>
+			<form th:action="'/' + ${id} + '/groups/delete'"
+				method="get">
+				<input type="number" name="id" placeholder="Input id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>UPDATE GROUP</p>
+			</h6>
+			<br>
+			<form th:action="'/' + ${id} + '/groups/update'"
+				method="post">
+				<input type="number" name="group_id" placeholder="Input id"
+					class="form-control"><br>
+				<input type="text" name="name" placeholder="Input name"
+					class="form-control">
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>GROUPS BY ONE COURSE</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/groups/grouplist_by_course'"
+				method="get">
+				<input type="number" name="course_id" placeholder="Input course id" 
+					class="form-control">
+			<br>		
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+						<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>ADD COURSE TO LIST</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/groups/courses'"
+				method="post">
+				<input type="number" name="group_id" placeholder="Input group id"
+					class="form-control"><br>
+				<input type="number" name="course_id" placeholder="Input course id"
+					class="form-control"><br>
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<h6 class="font-italic text-light">
+				<p class="text-secondary" align=left>REMOVE COURSE FROM LIST</p>
+			</h6>
+			<form th:action="'/' + ${id} + '/groups/courselist'"
+				method="post">
+				<input type="number" name="group_id" placeholder="Input group id"
+					class="form-control"><br>
+				<input type="number" name="course_id" placeholder="Input course id"
+					class="form-control"><br>
+				<br>
+				<div align=left>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</div>
+			</form>
+			<br>
+			<br>
+		</div>
+
+
+
+		<br>
+			<p class="lead text-muted">
+			<a th:href="'/' + ${id} + '/students/'"
+				class="btn btn-lg btn-secondary mr-10">Students</a> <a
+				th:href="'/' + ${id} + '/courses/'"
+				class="btn btn-lg btn-secondary mr-10">Courses</a> <a
+				th:href="'/' + ${id} + '/teachers/'"
+				class="btn btn-lg btn-secondary mr-10">Teachers</a> <a
+				th:href="'/' + ${id} + '/lessons/'"
+				class="btn btn-lg btn-secondary mr-10">Lessons</a>
+		</p>
+		</main>
+
+		<div th:insert="blocks/footer :: footer"></div>
+
+	</div>
+
+
+</body>
+</html>

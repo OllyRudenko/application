@@ -1,0 +1,12 @@
+<Context>
+  <ResourceLink 
+  name="jdbc/university" 
+  auth="container"
+  global="jdbc/university" 
+  type="javax.sql.DataSource"/>
+  
+  <!--<ResourceLink name="jdbc/empDS"
+    global="jdbc_empDS"
+    type="javax.sql.DataSource"/> -->
+  
+  </Context>
